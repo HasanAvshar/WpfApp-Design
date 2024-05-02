@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp11.Third_Design.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11.Third_Design"
+        mc:Ignorable="d"
+        Title="Window2" Height="700" Width="300">
+    <Grid>
+        <Label Height="30" Width="70" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5" FontSize="15" Template="{DynamicResource label}" />
+        <Label Content="home" Foreground="DarkBlue" FontWeight="DemiBold" Height="30" Width="70" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5" FontSize="15"/>
+
+        <StackPanel Margin="30">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Label Grid.Row="0" Content="Name" Foreground="DarkBlue" HorizontalAlignment="Left" VerticalAlignment="Top"  FontSize="15"/>
+                <TextBox Text="What is the name of the client?" TextAlignment="Center" FontSize="15" Foreground="#403938" Grid.Row="1" Height="50" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                <Label Grid.Row="2" Content="Surname" Foreground="DarkBlue" HorizontalAlignment="Left" VerticalAlignment="Top"  FontSize="15"/>
+                <TextBox  Text="What is the surname of the client?" TextAlignment="Center" FontSize="15" Foreground="#403938" Grid.Row="3" Height="50" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                <Label Grid.Row="4" Content="Number" Foreground="DarkBlue" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
+                <TextBox  Text="What is the phone number of the client?" TextAlignment="Center" FontSize="13" Foreground="#403938" Grid.Row="5" Height="50" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                <Label Grid.Row="6" Content="Company" Foreground="DarkBlue" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
+                <TextBox  Text="Which company does the person below to?" TextAlignment="Center" FontSize="12" Foreground="#403938" Grid.Row="7" Height="50" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                <Label Grid.Row="8" Content="Place" Foreground="DarkBlue" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
+                <TextBox  Text="Where did he/she found me?" TextAlignment="Center" FontSize="15" Foreground="#403938" Grid.Row="9" Height="50" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                <Label Grid.Row="10" Content="Registration Date" Foreground="DarkBlue" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
+                <Grid Grid.Row="11">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" Text="Day" TextAlignment="Center" FontSize="15" Foreground="#403938" Height="50"  GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                    <TextBox Grid.Column="1" Text="Month" TextAlignment="Center" FontSize="15" Foreground="#403938" Height="50"  GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                    <TextBox Grid.Column="2" Text="Year" TextAlignment="Center" FontSize="15" Foreground="#403938" Height="50"  GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                </Grid>
+                <Label Grid.Row="13" Content="How do I know him/her" Foreground="DarkBlue" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
+                <TextBox  Text="While how  do I know him/her" TextAlignment="Center" FontSize="12" Foreground="#403938" Grid.Row="14" Height="50" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" PreviewMouseDown="TextBox_PreviewMouseDown"/>
+                <Button Content="Register" Grid.Row="16" Background="DarkBlue" Height="40" Margin="15" Foreground="White" FontWeight="DemiBold"/>
+            </Grid>
+
+
+        </StackPanel>
+
+    </Grid>
+</Window>
